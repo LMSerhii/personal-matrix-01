@@ -66,40 +66,51 @@ def index():
             f2 = num_sum(month)  # 1
             f3 = num_sum(year)  # 17
             f4 = num_sum(f1 + f2 + f3)  # 4
-            f5 = num_sum(f1 + f2 + f3 + f4)  # 8
+
+            f5 = num_sum(f1 + f2 + f3 + f4)  # 8 center
+
             f6 = num_sum(f5 + f1)  # 21
             f7 = num_sum(f6 + f1)  # 7
+
             f8 = num_sum(f5 + f2)  # 9
             f9 = num_sum(f8 + f2)  # 10
-            f10 = num_sum()  # 7
-            f11 = num_sum()  # 6
-            f12 = num_sum()  # 12
-            f13 = num_sum()  # 16
-            f14 = num_sum()  # 19
-            f15 = num_sum()  # 8
-            f16 = num_sum()  # 4
-            f17 = num_sum()  # 14
-            f18 = num_sum()  # 18
-            f19 = num_sum()  # 21
-            f20 = num_sum()  # 17
-            f21 = num_sum()  # 22
-            f22 = num_sum()  # 9
-            f23 = num_sum()  # 8
-            f24 = num_sum()  # 8
-            f25 = num_sum()  # 11
-            f26 = num_sum()  # 5
-            f27 = num_sum()  # 7
-            f28 = num_sum()  # 6
+
+            f10 = num_sum(f5 + f3)  # 7
+            f11 = num_sum(f10 + f3)  # 6
+
+            f12 = num_sum(f5 + f4)  # 12
+            f13 = num_sum(f12 + f3)  # 16
+
+            f14 = num_sum(f10 + f12)  # 19
+            f15 = num_sum(f10 + f14)  # 8
+            f16 = num_sum(f12 + f14)  # 4
+
+            f17 = num_sum(f1 + f2)  # 14
+            f18 = num_sum(f2 + f3)  # 18
+            f19 = num_sum(f3 + f4)  # 21
+            f20 = num_sum(f1 + f4)  # 17
+
+            f21 = num_sum(f17 + f5)  # 22
+            f22 = num_sum(f21 + f17)  # 9
+
+            f23 = num_sum(f5 + f18)  # 8
+            f24 = num_sum(f23 + f18)  # 8
+
+            f25 = num_sum(f5 + f19)  # 11
+            f26 = num_sum(f25 + f19)  # 5
+
+            f27 = num_sum(f5 + f20)  # 7
+            f28 = num_sum(f27 + f20)  # 6
 
             # circle-line
             # 5 age
-            f29 = num_sum()  # 9
-            f30 = num_sum()  # 22
-            f31 = num_sum()  # 5
-            f32 = num_sum()  # 14
-            f33 = num_sum()  # 19
-            f34 = num_sum()  # 8
-            f35 = num_sum()  # 4
+            f29 = num_sum(f1 + f17)  # 9
+            f30 = num_sum(f1 + f29)  # 22
+            f31 = num_sum(f29 + f17)  # 5
+            f32 = num_sum(f29 + f31)  # 14
+            f33 = num_sum(f31 + f17)  # 19
+            f34 = num_sum(f30 + f1)  # 8
+            f35 = num_sum(f29 + f30)  # 4
 
             # 15 age
             f36 = num_sum()  # 15
