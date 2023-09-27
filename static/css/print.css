@@ -1,0 +1,16 @@
+.no-print {
+  display: none !important;
+}
+
+.schedule-icon {
+  scale: 2;
+}
+
+.information-text-wrap {
+  margin-bottom: 250px;
+}
+
+.schedule-1 {
+  padding: 50px 0;
+  height: 100vh;
+}
