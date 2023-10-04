@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet" />
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"/>
 
     <!-- Normolize -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+            integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
 
     <!-- Stylesheets -->
     <link
             type="text/css"
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}" />
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"/>
 
     <link
-      rel="stylesheet"
-      type="text/css"
-      media="print"
-      href="{{ url_for('static', filename='css/print.css') }}" />
+            rel="stylesheet"
+            type="text/css"
+            media="print"
+            href="{{ url_for('static', filename='css/print.css') }}"/>
 
     <!-- Favicon -->
     <link
-      rel="shortcut icon"
-      href="{{ url_for('static', filename='img/favicon.svg') }}"
-      type="image/x-icon" />
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='img/favicon.svg') }}"
+            type="image/x-icon"/>
 
     <title>{% block title %}{{ context.title }}{% endblock title %}</title>
-  </head>
+</head>
 
-  <body>
-    <main>{% block content %} {% endblock content %}</main>
-    <script src="../static/js/modal.js"></script>
-  </body>
+<body>
+<main>{% block content %} {% endblock content %}</main>
+<script src="../static/js/modal.js"></script>
+<script>
+      function validateForm()
+{
+let x=document.forms["order-service"]["user-name"].value;
+if (x==null || x=="")
+  {
+  alert("Необходимо заполнить поле Имя!");
+  return false;
+  }
+}
+
+
+</script>
+</body>
 </html>
