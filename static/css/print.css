@@ -3,7 +3,21 @@
 }
 
 .schedule-icon {
-  scale: 2;
+  scale: 2.2;
+}
+
+.schedule-icon .line {
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.schedule-icon .line-text {
+  fill: #0f0110;
+  font-size: 5px;
+}
+
+.schedule-icon .dot-on-line {
+  fill: #0f0110;
 }
 
 .information-text-wrap {
